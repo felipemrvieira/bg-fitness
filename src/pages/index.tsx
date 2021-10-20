@@ -1,5 +1,10 @@
 import Head from "next/head";
-import styles from "../../styles/home.module.scss";
+// import styles from "../../styles/home.module.scss";
+import Differentials from "../components/Differentials";
+import Main from "../components/Main";
+import Plans from "../components/Plans";
+import Testimonials from "../components/Testimonials";
+import Units from "../components/Units";
 
 export default function Home() {
   return (
@@ -7,7 +12,11 @@ export default function Home() {
       <Head>
         <title>BG Fitness - Início</title>
       </Head>
-      <h1 className={styles.title}>Home</h1>
+      <Main />
+      <Differentials />
+      <Plans />
+      <Units />
+      <Testimonials />
     </>
   );
 }
