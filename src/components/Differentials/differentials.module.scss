@@ -1,5 +1,42 @@
 .sectionContainer {
-  height: 7rem;
   box-shadow: rgb(199 199 199 / 34%) 1px 1px 60px 0px;
   padding: 0;
+}
+
+.sectionContent {
+  width: 1350px;
+  margin: 0 auto;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+
+  .differentials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .differential {
+      position: relative;
+      width: 33%;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      .box {
+        position: absolute;
+        height: 130px;
+        width: 130px;
+        border-radius: 3px;
+        background: var(--blue-soft);
+      }
+      p {
+        position: absolute;
+        left: 32px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: var(--gray-900);
+      }
+    }
+  }
 }
