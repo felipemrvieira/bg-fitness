@@ -1,5 +1,54 @@
 .sectionContainer {
-  height: 7rem;
-  box-shadow: rgb(199 199 199 / 34%) 1px 1px 60px 0px;
   padding: 0;
+  background: var(--gray-100);
+}
+.sectionContent {
+  width: 1350px;
+  margin: 0 auto;
+
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  .callToAction {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    span {
+      color: var(--orange-main);
+      max-width: 80%;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--blue-main);
+      font-size: 56px;
+    }
+    p {
+      color: var(--blue-main);
+      font-weight: normal;
+    }
+    .buttonWrapper {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .button {
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        margin-right: 12px;
+        background-color: var(--orange-main);
+      }
+      a {
+        color: var(--blue-main);
+        font-weight: normal;
+      }
+    }
+  }
+  .video {
+    width: 50%;
+  }
 }
