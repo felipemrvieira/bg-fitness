@@ -14,9 +14,9 @@ export default function Home() {
       </Head>
       <Main />
       <Differentials />
-      {/* 
       <Plans />
       <Units />
+      {/* 
       <Testimonials /> 
       */}
     </>
