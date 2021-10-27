@@ -3,10 +3,11 @@
   background: var(--gray-100);
 }
 .sectionContent {
-  width: 1350px;
+  max-width: 1350px;
   margin: 0 auto;
 
-  padding: 32px 0;
+  padding: 32px 50px;
+
   display: flex;
   flex-direction: row;
   .callToAction {
@@ -24,7 +25,7 @@
     }
     h1 {
       color: var(--blue-main);
-      font-size: 56px;
+      font-size: 54px;
     }
     p {
       color: var(--blue-main);
