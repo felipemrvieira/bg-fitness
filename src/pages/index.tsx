@@ -16,7 +16,7 @@ export default function Home() {
       <Differentials />
       <Plans />
       <Units />
-      {/* <Testimonials /> */}
+      <Testimonials />
     </>
   );
 }

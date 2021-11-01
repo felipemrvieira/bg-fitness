@@ -1,5 +1,88 @@
 .sectionContainer {
-  height: 7rem;
-  box-shadow: rgb(199 199 199 / 34%) 1px 1px 60px 0px;
+  // height: 7rem;
+  // box-shadow: rgb(199 199 199 / 34%) 1px 1px 60px 0px;
   padding: 0;
+  .sectionContent {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    background-image: url("./img/background-pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    .testimonialsHeader {
+      color: var(--blue-main);
+      width: 400px;
+      margin-right: 42px;
+      span {
+        box-shadow: rgb(199 199 199 / 34%) 1px 1px 60px 0px;
+
+        border-radius: 4px;
+        padding: 1rem;
+        background: var(--white);
+        font-size: 25px;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 18px;
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+    .testimonials {
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      padding: 40px;
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--gray-400);
+        border-radius: 25px;
+      }
+      &::-webkit-scrollbar-track {
+        background: rgb(240, 240, 240);
+        border-radius: 0px;
+        box-shadow: rgb(240 240 240) 0px 0px 0px 0px inset;
+      }
+      .testimonial {
+        box-shadow: rgb(199 199 199 / 60%) 1px 1px 60px 0px;
+        flex: 0 0 260px;
+        border-radius: 8px;
+        margin-right: 12px;
+        background: var(--white);
+        padding: 1.5rem;
+        p {
+          font-size: 13px;
+          font-family: "Roboto", sans-serif;
+          color: var(--gray-900);
+          padding-bottom: 18px;
+          border-bottom: 0.1px solid var(--gray-900);
+        }
+        .writter {
+          display: flex;
+          flex-direction: row;
+          margin-top: 18px;
+          align-items: center;
+
+          .writterPicWrapper {
+            margin-right: 12px;
+            width: 50px;
+            .writterPic {
+              border-radius: 50%;
+            }
+          }
+          .writterName {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            color: var(--blue-main);
+          }
+        }
+      }
+    }
+  }
 }
