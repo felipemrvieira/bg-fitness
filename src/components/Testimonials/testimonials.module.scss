@@ -4,17 +4,18 @@
   padding: 0;
   .sectionContent {
     max-width: 1350px;
-    margin: 0 auto;
-    padding: 100px 50px;
+    // margin: 0 auto;
+    padding: 50px 0px;
     background-image: url("./img/background-pattern.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     .testimonialsHeader {
       color: var(--blue-main);
-      width: 400px;
-      margin-right: 42px;
+      width: 320px;
+      margin: 0 50px;
       span {
         box-shadow: rgb(199 199 199 / 34%) 1px 1px 60px 0px;
 
@@ -33,6 +34,7 @@
     .testimonials {
       display: flex;
       flex-direction: row;
+      flex: 1;
       overflow-x: scroll;
       padding: 40px;
       &::-webkit-scrollbar {
