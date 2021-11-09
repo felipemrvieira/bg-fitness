@@ -59,3 +59,14 @@ h5,
 h6 {
   margin: 0;
 }
+
+#ReactSimpleImageViewer {
+  z-index: 999;
+}
+
+.leaflet-top,
+.leaflet-left,
+.leaflet-bottom,
+.leaflet-right {
+  z-index: 1;
+}

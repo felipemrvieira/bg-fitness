@@ -13,6 +13,12 @@
   justify-content: space-between;
   align-items: center;
 
+  .logoContainer {
+    width: 250px;
+    position: relative;
+    height: 58.33px;
+  }
+
   img {
     max-width: 250px;
   }
