@@ -1,0 +1,22 @@
+.sectionContainer {
+  padding: 0;
+  width: 100%;
+}
+.sectionContent {
+  width: 100%;
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .sectionTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+  }
+}

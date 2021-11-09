@@ -3,11 +3,15 @@ import React from "react";
 
 import plans from "./plans.module.scss";
 
-const Plans: React.FC = () => {
+interface Props {
+  title: string;
+}
+
+const Plans: React.FC<Props> = ({ title }) => {
   return (
     <section className={plans.sectionContainer}>
       <div className={plans.sectionContent}>
-        <h2 className={plans.sectionTitle}>Escolha seu plano</h2>
+        <h2 className={plans.sectionTitle}>{title}</h2>
         <div className={plans.plansWrapper}>
           <div className={plans.plan}>
             <header className={plans.gold}>

@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <Main />
       <Differentials />
-      <Plans />
-      <Units />
+      <Plans title="Nossos Planos" />
+      <Units title="Nossas unidades" />
       <Testimonials />
     </>
   );

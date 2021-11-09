@@ -6,12 +6,17 @@ import Farol from "./img/farol.jpeg";
 import Biu from "./img/biu.webp";
 import Jatiuca from "./img/praia.jpg";
 import Image from "next/image";
+import Button from "../Button";
 
-const Units: React.FC = () => {
+interface Props {
+  title: string;
+}
+
+const Units: React.FC<Props> = ({ title }) => {
   return (
     <section className={units.sectionContainer}>
       <div className={units.sectionContent}>
-        <h2 className={units.sectionTitle}>Nossas unidades</h2>
+        <h2 className={units.sectionTitle}>{title}</h2>
         <div className={units.units}>
           <div className={units.unit}>
             <div className={units.unitHeader}>
@@ -24,7 +29,7 @@ const Units: React.FC = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
                 laborum et vero quibusdam!
               </p>
-              <div className={units.unitTour}>Fazer tour virtual</div>
+              <Button label="Fazer tour virtual" />
             </div>
           </div>
           <div className={units.unit}>
@@ -42,7 +47,7 @@ const Units: React.FC = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
                 laborum et vero quibusdam!
               </p>
-              <div className={units.unitTour}>Fazer tour virtual</div>
+              <Button label="Fazer tour virtual" />
             </div>
           </div>
           <div className={units.unit}>
@@ -60,7 +65,7 @@ const Units: React.FC = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
                 laborum et vero quibusdam!
               </p>
-              <div className={units.unitTour}>Fazer tour virtual</div>
+              <Button label="Fazer tour virtual" />
             </div>
           </div>
           <div className={units.unit}>
@@ -74,7 +79,7 @@ const Units: React.FC = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
                 laborum et vero quibusdam!
               </p>
-              <div className={units.unitTour}>Fazer tour virtual</div>
+              <Button label="Fazer tour virtual" />
             </div>
           </div>
         </div>

@@ -11,21 +11,21 @@ const Footer: React.FC = () => {
         <nav>
           <div className={footer.navItem}>
             <div className={footer.navLabel}>Legal</div>
-            <a>Regulamentos</a>
-            <a>Termos de uso da academia</a>
-            <a>Contratos</a>
+            <a className={footer.navLink}>Regulamentos</a>
+            <a className={footer.navLink}>Termos de uso da academia</a>
+            <a className={footer.navLink}>Contratos</a>
           </div>
           <div className={footer.navItem}>
             <div className={footer.navLabel}>Institucional</div>
-            <a>Sobre</a>
-            <a>Unidades</a>
-            <a>Trabalhe conosco</a>
+            <a className={footer.navLink}>Sobre</a>
+            <a className={footer.navLink}>Unidades</a>
+            <a className={footer.navLink}>Trabalhe conosco</a>
           </div>
           <div className={footer.navItem}>
             <div className={footer.navLabel}>Redes Sociais</div>
-            <a>Instagram</a>
-            <a>Youtube</a>
-            <a>Spotify</a>
+            <a className={footer.navLink}>Instagram</a>
+            <a className={footer.navLink}>Youtube</a>
+            <a className={footer.navLink}>Spotify</a>
           </div>
         </nav>
       </div>
