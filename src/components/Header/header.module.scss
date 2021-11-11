@@ -19,12 +19,33 @@
     height: 58.33px;
   }
 
+  @media only screen and (max-width: 984px) {
+    .logoContainer {
+      width: 167.5px;
+      position: relative;
+      height: 39.08px;
+    }
+  }
+
   img {
     max-width: 250px;
   }
 
+  @media only screen and (min-width: 984px) {
+    .iconButton {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 984px) {
+    nav {
+      display: none !important;
+    }
+  }
   nav {
     height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
       font-family: "Montserrat", sans-serif;
