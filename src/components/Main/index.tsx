@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 // import Link from "next/link";
 
 import main from "./main.module.scss";
@@ -15,7 +16,9 @@ const Main: React.FC = () => {
             consectetur adipisicing elit.
           </p>
           <div className={main.buttonWrapper}>
-            <div className={main.button}></div>
+            <div className={main.button}>
+              <ArrowForwardIosIcon className={main.buttonIcon} />
+            </div>
             <a>Saiba mais</a>
           </div>
         </div>
