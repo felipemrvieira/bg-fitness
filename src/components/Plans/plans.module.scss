@@ -135,3 +135,18 @@
   right: -8px;
   top: -12px;
 }
+
+@media only screen and (min-width: 1px) and (max-width: 764px) {
+  .plansWrapper {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .plan {
+      position: relative;
+      width: 320px !important;
+      margin: 12px;
+    }
+  }
+}

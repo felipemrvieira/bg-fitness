@@ -22,6 +22,13 @@
       margin-top: 24px;
       .unit {
         flex: 0 0 32%;
+        @media only screen and (min-width: 701px) and (max-width: 910px) {
+          flex: 0 0 50% !important;
+        }
+        @media only screen and (min-width: 1px) and (max-width: 700px) {
+          flex: 0 0 80% !important;
+        }
+
         margin: 1%;
         box-shadow: rgb(199 199 199 / 45%) 1px 1px 20px 0px;
         border-radius: 4px;

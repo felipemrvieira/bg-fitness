@@ -10,8 +10,14 @@
 
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 984px) {
+    flex-direction: column;
+  }
   .callToAction {
     width: 50%;
+    @media only screen and (max-width: 984px) {
+      width: 100%;
+    }
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -59,5 +65,11 @@
   }
   .video {
     width: 50%;
+    margin: 0 32px 0 0;
+
+    @media only screen and (max-width: 984px) {
+      width: 100%;
+      margin: 32px 0 0 0;
+    }
   }
 }

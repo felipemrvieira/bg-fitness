@@ -3,11 +3,16 @@
   background: var(--gray-100);
   background: #fafaff;
   border-bottom: 6px solid var(--orange-main);
+  overflow: hidden;
 }
 .sectionContent {
   max-width: 1350px;
   margin: 0 auto;
   padding: 80px 50px;
+  @media only screen and (min-width: 1px) and (max-width: 750px) {
+    padding: 32px 8px;
+  }
+
   .sectionTitle {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -17,6 +22,7 @@
     margin-bottom: 32px;
   }
   .table {
+    overflow-y: scroll;
     // width: 100%;
     // border-collapse: collapse;
     // border-spacing: 0;

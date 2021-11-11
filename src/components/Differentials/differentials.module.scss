@@ -7,18 +7,23 @@
   max-width: 1350px;
   margin: 0 auto;
   padding: 32px 50px;
+
   display: flex;
   flex-direction: row;
 
   .differentials {
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 743px) {
+      flex-direction: column;
+    }
     align-items: center;
     justify-content: space-between;
     width: 100%;
     .differential {
       position: relative;
       width: 33%;
+
       height: 180px;
       display: flex;
       align-items: center;
@@ -37,6 +42,42 @@
         font-weight: bold;
         font-size: 32px;
         color: var(--gray-900);
+      }
+    }
+    @media only screen and (min-width: 743px) and (max-width: 800px) {
+      .differential {
+        width: 33%;
+        height: 100px;
+
+        .box {
+          height: 80px;
+          width: 80px;
+        }
+        p {
+          left: 22px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          font-size: 22px;
+          color: var(--gray-900);
+        }
+      }
+    }
+    @media only screen and (min-width: 1px) and (max-width: 742px) {
+      .differential {
+        width: 75%;
+        height: 100px;
+
+        .box {
+          height: 80px;
+          width: 80px;
+        }
+        p {
+          left: 22px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: bold;
+          font-size: 22px;
+          color: var(--gray-900);
+        }
       }
     }
   }
