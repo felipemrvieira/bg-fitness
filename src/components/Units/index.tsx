@@ -26,10 +26,10 @@ const Units: React.FC<Props> = ({ title }) => {
               <span>Unidade</span>
               <h3 className={units.unitTitle}>BG Benedito Bentes</h3>
               <p className={units.unitDescription}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                laborum et vero quibusdam!
+                Avenida Cachoeira do Meirim, 33 - Benedito Bentes, Maceió - AL,
+                57084-040
               </p>
-              <Button label="Fazer tour virtual" />
+              <Button label="Conheça a unidade" />
             </div>
           </div>
           <div className={units.unit}>
@@ -44,10 +44,10 @@ const Units: React.FC<Props> = ({ title }) => {
               <span>Unidade</span>
               <h3 className={units.unitTitle}>BG Farol</h3>
               <p className={units.unitDescription}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                laborum et vero quibusdam!
+                Avenida Fernandes Lima, 3204a - Gruta de Lourdes, Maceió - AL,
+                57052-403
               </p>
-              <Button label="Fazer tour virtual" />
+              <Button label="Conheça a unidade" />
             </div>
           </div>
           <div className={units.unit}>
@@ -62,10 +62,10 @@ const Units: React.FC<Props> = ({ title }) => {
               <span>Unidade</span>
               <h3 className={units.unitTitle}>BG Jatiúca</h3>
               <p className={units.unitDescription}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                laborum et vero quibusdam!
+                Rua Marechal Antônio Guedes Muniz, 112 - Jatiúca, Maceió - AL,
+                57036-670
               </p>
-              <Button label="Fazer tour virtual" />
+              <Button label="Conheça a unidade" />
             </div>
           </div>
           <div className={units.unit}>
@@ -76,10 +76,9 @@ const Units: React.FC<Props> = ({ title }) => {
               <span>Unidade</span>
               <h3 className={units.unitTitle}>BG Ponta Verde</h3>
               <p className={units.unitDescription}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
-                laborum et vero quibusdam!
+                Rua Valdo Omena, 152 - Ponta Verde, Maceió - AL, 57035170
               </p>
-              <Button label="Fazer tour virtual" />
+              <Button label="Conheça a unidade" />
             </div>
           </div>
         </div>

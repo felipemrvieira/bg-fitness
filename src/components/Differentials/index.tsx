@@ -14,11 +14,11 @@ const Differentials: React.FC = () => {
           </div>
           <div className={differentials.differential}>
             <div className={differentials.box}></div>
-            <p>Musculação com maquinário exclusivo</p>
+            <p>Acompanhamento de treino com profissional formado</p>
           </div>
           <div className={differentials.differential}>
             <div className={differentials.box}></div>
-            <p>Musculação com maquinário exclusivo</p>
+            <p>Planos e condições de pagamento especiais</p>
           </div>
         </div>
       </div>

@@ -38,12 +38,16 @@
       color: var(--blue-main);
       font-weight: normal;
     }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .buttonWrapper {
       margin-top: 32px;
       display: flex;
       flex-direction: row;
       align-items: center;
-      cursor: pointer;
       .button {
         height: 52px;
         width: 52px;
@@ -57,9 +61,10 @@
           color: white;
         }
       }
-      a {
+      span {
         color: var(--blue-main);
         font-weight: normal;
+        font-size: initial;
       }
     }
   }

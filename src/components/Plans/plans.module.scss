@@ -70,6 +70,11 @@
           right: 0;
           margin-left: auto;
           margin-right: auto;
+          color: white;
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          transition: box-shadow 0.3s;
 
           & > span {
             font-size: 12px;
@@ -78,6 +83,9 @@
             font-weight: bold;
             font-size: 22px;
             line-height: 18px;
+          }
+          &:hover {
+            box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.16);
           }
         }
       }

@@ -1,6 +1,6 @@
 import React from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-// import Link from "next/link";
+import Link from "next/link";
 
 import main from "./main.module.scss";
 
@@ -9,17 +9,21 @@ const Main: React.FC = () => {
     <section className={main.sectionContainer}>
       <div className={main.sectionContent}>
         <div className={main.callToAction}>
-          <span>Lorem ipsum dolor sit amet</span>
+          <span>Conheça a BG Fitness</span>
           <h1>Academia pertinho de você, do seu jeito!</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-            consectetur adipisicing elit.
+            Com 4 unidades em bairros centrais, certamente há uma BG pertinho de
+            você. Vem conhecer!
           </p>
           <div className={main.buttonWrapper}>
-            <div className={main.button}>
-              <ArrowForwardIosIcon className={main.buttonIcon} />
-            </div>
-            <a>Saiba mais</a>
+            <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
+              <a target="_blank">
+                <div className={main.button}>
+                  <ArrowForwardIosIcon className={main.buttonIcon} />
+                </div>
+                <span>Quero me matricular!</span>
+              </a>
+            </Link>
           </div>
         </div>
         <div className={main.video}>

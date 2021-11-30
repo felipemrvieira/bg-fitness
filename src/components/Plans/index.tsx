@@ -1,5 +1,5 @@
 import React from "react";
-// import Link from "next/link";
+import Link from "next/link";
 
 import plans from "./plans.module.scss";
 
@@ -17,10 +17,12 @@ const Plans: React.FC<Props> = ({ title }) => {
             <header className={plans.gold}>
               <span>bg</span>
               <p className={plans.planName}>Gold</p>
-              <div className={plans.button}>
-                <span>a partir de</span>
-                <p>R$ 82,90</p>
-              </div>
+              <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
+                <a className={plans.button} target="_blank">
+                  <span>a partir de</span>
+                  <p>R$ 89,90</p>
+                </a>
+              </Link>
             </header>
             <div className={plans.body}>
               <div>
@@ -30,23 +32,19 @@ const Plans: React.FC<Props> = ({ title }) => {
               <div className={plans.advantagesWrapper}>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Acesso à uma unidade</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Cancelamento a qualquer tempo</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Horário de treino especial</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
-                </div>
-                <div className={plans.advantage}>
-                  <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Acesso à modalidades do horário</p>
                 </div>
               </div>
             </div>
@@ -56,10 +54,12 @@ const Plans: React.FC<Props> = ({ title }) => {
             <header className={plans.platinum}>
               <span>bg</span>
               <p className={plans.planName}>Platinum</p>
-              <div className={plans.button}>
-                <span>a partir de</span>
-                <p>R$ 82,90</p>
-              </div>
+              <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
+                <a className={plans.button} target="_blank">
+                  <span>a partir de</span>
+                  <p>R$ 129,90</p>
+                </a>
+              </Link>
             </header>
             <div className={plans.body}>
               <div>
@@ -69,23 +69,19 @@ const Plans: React.FC<Props> = ({ title }) => {
               <div className={plans.advantagesWrapper}>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Acesso à todas as unidades</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Horário livre</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Acesso à todas as modalidades</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Vantagem do plano gold</p>
-                </div>
-                <div className={plans.advantage}>
-                  <div></div>
-                  <p>Vantagem do plano gold</p>
+                  <p>Acesso às cadeiras de massagem</p>
                 </div>
               </div>
             </div>
