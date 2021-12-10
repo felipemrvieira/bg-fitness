@@ -5,33 +5,14 @@ import ImageViewer from "react-simple-image-viewer";
 import unitGallery from "./unitGallery.module.scss";
 
 import Image from "next/image";
-import Farol from "./img/farol.jpeg";
-import Biu from "./img/biu.webp";
-import Jatiuca from "./img/praia.jpg";
 
-const UnitGallery: React.FC = () => {
+interface Props {
+  photos: string[];
+}
+
+const UnitGallery: React.FC<Props> = ({ photos }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const images = [
-    Farol.src,
-    Biu.src,
-    Jatiuca.src,
-    Farol.src,
-    Biu.src,
-    Jatiuca.src,
-    Farol.src,
-    Biu.src,
-    Jatiuca.src,
-    Farol.src,
-    Biu.src,
-    Jatiuca.src,
-    Farol.src,
-    Biu.src,
-    Jatiuca.src,
-    Farol.src,
-    Biu.src,
-    Jatiuca.src,
-  ];
 
   const openImageViewer = useCallback((index) => {
     setCurrentImage(index);
@@ -48,7 +29,7 @@ const UnitGallery: React.FC = () => {
       <div className={unitGallery.sectionContent}>
         <h2 className={unitGallery.sectionTitle}>Galeria de fotos</h2>
         <div>
-          {images.map((src, index) => (
+          {photos.map((src, index) => (
             <Image
               className={unitGallery.unitPic}
               src={src}
@@ -62,7 +43,7 @@ const UnitGallery: React.FC = () => {
 
           {isViewerOpen && (
             <ImageViewer
-              src={images}
+              src={photos}
               currentIndex={currentImage}
               disableScroll={false}
               closeOnClickOutside={true}

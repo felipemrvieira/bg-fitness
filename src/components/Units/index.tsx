@@ -1,5 +1,5 @@
 import React from "react";
-// import Link from "next/link";
+import Link from "next/link";
 
 import units from "./units.module.scss";
 import Farol from "./img/farol.jpeg";
@@ -29,7 +29,11 @@ const Units: React.FC<Props> = ({ title }) => {
                 Avenida Cachoeira do Meirim, 33 - Benedito Bentes, Maceió - AL,
                 57084-040
               </p>
-              <Button label="Conheça a unidade" />
+              <Link href="/unidades/bg-benedito-bentes" passHref={true}>
+                <a>
+                  <Button label="Conheça a unidade" />
+                </a>
+              </Link>
             </div>
           </div>
           <div className={units.unit}>
@@ -47,7 +51,11 @@ const Units: React.FC<Props> = ({ title }) => {
                 Avenida Fernandes Lima, 3204a - Gruta de Lourdes, Maceió - AL,
                 57052-403
               </p>
-              <Button label="Conheça a unidade" />
+              <Link href="/unidades/bg-farol" passHref={true}>
+                <a>
+                  <Button label="Conheça a unidade" />
+                </a>
+              </Link>
             </div>
           </div>
           <div className={units.unit}>
@@ -65,7 +73,11 @@ const Units: React.FC<Props> = ({ title }) => {
                 Rua Marechal Antônio Guedes Muniz, 112 - Jatiúca, Maceió - AL,
                 57036-670
               </p>
-              <Button label="Conheça a unidade" />
+              <Link href="/unidades/bg-jatiuca" passHref={true}>
+                <a>
+                  <Button label="Conheça a unidade" />
+                </a>
+              </Link>
             </div>
           </div>
           <div className={units.unit}>
@@ -78,7 +90,11 @@ const Units: React.FC<Props> = ({ title }) => {
               <p className={units.unitDescription}>
                 Rua Valdo Omena, 152 - Ponta Verde, Maceió - AL, 57035170
               </p>
-              <Button label="Conheça a unidade" />
+              <Link href="/unidades/bg-ponta-verde" passHref={true}>
+                <a>
+                  <Button label="Conheça a unidade" />
+                </a>
+              </Link>{" "}
             </div>
           </div>
         </div>

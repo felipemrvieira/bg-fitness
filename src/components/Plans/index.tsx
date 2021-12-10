@@ -5,9 +5,33 @@ import plans from "./plans.module.scss";
 
 interface Props {
   title: string;
+  planList: Plan[];
 }
 
-const Plans: React.FC<Props> = ({ title }) => {
+interface Plan {
+  title: string;
+  price: string;
+  enrolmentFee: string;
+  annualFee: string;
+}
+
+const Plans: React.FC<Props> = ({
+  title,
+  planList = [
+    {
+      title: "Gold",
+      price: "99,90",
+      enrolmentFee: "129,90",
+      annualFee: "149,90",
+    },
+    {
+      title: "Platinum",
+      price: "129,90",
+      enrolmentFee: "129,90",
+      annualFee: "149,90",
+    },
+  ],
+}) => {
   return (
     <section className={plans.sectionContainer}>
       <div className={plans.sectionContent}>
@@ -20,17 +44,17 @@ const Plans: React.FC<Props> = ({ title }) => {
               <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
                 <a className={plans.button} target="_blank">
                   <span>a partir de</span>
-                  <p>R$ 99,90</p>
+                  <p>{planList[0].price}</p>
                 </a>
               </Link>
             </header>
             <div className={plans.body}>
               <div>
                 <p className={plans.label}>
-                  Taxa de adesão <s>R$ 129,90</s>
+                  Taxa de adesão <s>R$ {planList[0].enrolmentFee || 0}</s>
                 </p>
                 <p className={plans.label}>
-                  Intercalada <s>R$ 149,90</s>
+                  Intercalada <s>R$ {planList[0].annualFee}</s>
                 </p>
               </div>
               <div className={plans.advantagesWrapper}>
@@ -65,14 +89,18 @@ const Plans: React.FC<Props> = ({ title }) => {
               <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
                 <a className={plans.button} target="_blank">
                   <span>a partir de</span>
-                  <p>R$ 129,90</p>
+                  <p>{planList[1].price}</p>
                 </a>
               </Link>
             </header>
             <div className={plans.body}>
               <div>
-                <p className={plans.label}>Taxa de adesão R$ 129,90</p>
-                <p className={plans.label}>Intercalada R$ 149,90</p>
+                <p className={plans.label}>
+                  Taxa de adesão R$ {planList[0].enrolmentFee}
+                </p>
+                <p className={plans.label}>
+                  Intercalada R$ {planList[0].annualFee}
+                </p>
               </div>
               <div className={plans.advantagesWrapper}>
                 <div className={plans.advantage}>

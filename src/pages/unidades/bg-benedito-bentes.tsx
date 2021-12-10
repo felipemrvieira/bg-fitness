@@ -7,6 +7,11 @@ import UnitGallery from "../../components/UnitGallery";
 import dynamic from "next/dynamic";
 import UnitDescription from "../../components/UnitDescription";
 
+import Image from "next/image";
+import Farol from "./img/farol.jpeg";
+import Biu from "./img/biu.webp";
+import Jatiuca from "./img/praia.jpg";
+
 export default function Unidades() {
   const UnitMap = dynamic(() => import("../../components/UnitMap"), {
     ssr: false,
@@ -19,7 +24,7 @@ export default function Unidades() {
     plans: [
       {
         title: "BG Gold",
-        price: "R$ 89,90",
+        price: "R$ 99,90",
         advantages: [
           "Aulas particulares",
           "Aulas de ginástica",
@@ -28,12 +33,12 @@ export default function Unidades() {
           "Aulas de crossfit",
           "Aulas de yoga",
         ],
-        enrolmentFee: "R$ 89,90",
-        annualFee: "R$ 89,90",
+        enrolmentFee: "R$ 129,90",
+        annualFee: "R$ 149,90",
       },
       {
         title: "BG Platinum",
-        price: "R$ 89,90",
+        price: "R$ 129,90",
         advantages: [
           "Aulas particulares",
           "Aulas de ginástica",
@@ -42,23 +47,28 @@ export default function Unidades() {
           "Aulas de crossfit",
           "Aulas de yoga",
         ],
-        enrolmentFee: "R$ 89,90",
-        annualFee: "R$ 89,90",
+        enrolmentFee: "R$ 129,90",
+        annualFee: "R$ 149,90",
       },
     ],
   };
 
+  const photos = [Farol.src, Biu.src, Jatiuca.src];
+
+  const lat = -9.620599;
+  const lng = -35.739508;
+
   return (
     <>
       <Head>
-        <title>BG Fitness - Unidade BG Ponta Verde</title>
+        <title>{`BG Fitness - ${info.title}`}</title>
       </Head>
       <UnitHeader />
-      <UnitDescription />
-      <UnitGallery />
-      <UnitMap />
+      <UnitDescription title={info.title} description={info.description} />
+      <UnitGallery photos={photos} />
+      <UnitMap lat={lat} lng={lng} />
       <ClassesTable title="Programação de aulas da unidade" />
-      <Plans title="Planos da unidade" />
+      <Plans title="Planos da unidade" planList={info.plans} />
       <Units title="Conheça outras unidades" />
     </>
   );
