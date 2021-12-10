@@ -47,6 +47,7 @@ export default function Unidades() {
       },
     ],
   };
+
   return (
     <>
       <Head>

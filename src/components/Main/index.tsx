@@ -12,8 +12,8 @@ const Main: React.FC = () => {
           <span>Conheça a BG Fitness</span>
           <h1>Academia pertinho de você, do seu jeito!</h1>
           <p>
-            Com 4 unidades em bairros centrais, certamente há uma BG pertinho de
-            você. Vem conhecer!
+            Com 4 unidades em bairros bem localizados, certamente há uma BG
+            pertinho de você. Vem conhecer!
           </p>
           <div className={main.buttonWrapper}>
             <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">

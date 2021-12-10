@@ -20,31 +20,39 @@ const Plans: React.FC<Props> = ({ title }) => {
               <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
                 <a className={plans.button} target="_blank">
                   <span>a partir de</span>
-                  <p>R$ 89,90</p>
+                  <p>R$ 99,90</p>
                 </a>
               </Link>
             </header>
             <div className={plans.body}>
               <div>
-                <p className={plans.label}>Taxa de adesão R$ 129,90</p>
-                <p className={plans.label}>Anuidade R$ 149,90</p>
+                <p className={plans.label}>
+                  Taxa de adesão <s>R$ 129,90</s>
+                </p>
+                <p className={plans.label}>
+                  Intercalada <s>R$ 149,90</s>
+                </p>
               </div>
               <div className={plans.advantagesWrapper}>
+                <div className={plans.advantage}>
+                  <div></div>
+                  <p>TAXA ZERO</p>
+                </div>
                 <div className={plans.advantage}>
                   <div></div>
                   <p>Acesso à uma unidade</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
-                  <p>Cancelamento a qualquer tempo</p>
-                </div>
-                <div className={plans.advantage}>
-                  <div></div>
-                  <p>Horário de treino especial</p>
+                  <p>Horário livre</p>
                 </div>
                 <div className={plans.advantage}>
                   <div></div>
                   <p>Acesso à modalidades do horário</p>
+                </div>
+                <div className={plans.advantage}>
+                  <div></div>
+                  <p>Cancelamento sem multa após 4 meses</p>
                 </div>
               </div>
             </div>
@@ -64,9 +72,13 @@ const Plans: React.FC<Props> = ({ title }) => {
             <div className={plans.body}>
               <div>
                 <p className={plans.label}>Taxa de adesão R$ 129,90</p>
-                <p className={plans.label}>Anuidade R$ 149,90</p>
+                <p className={plans.label}>Intercalada R$ 149,90</p>
               </div>
               <div className={plans.advantagesWrapper}>
+                <div className={plans.advantage}>
+                  <div></div>
+                  <p>Avaliação grátis</p>
+                </div>
                 <div className={plans.advantage}>
                   <div></div>
                   <p>Acesso à todas as unidades</p>
