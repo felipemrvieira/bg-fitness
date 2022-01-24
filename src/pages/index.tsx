@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <Main />
       <Differentials />
-      <Plans title="Nossos Planos" />
+      <Plans planList={[]} title="Nossos Planos" />
       <Units title="Nossas unidades" />
       <Testimonials />
     </>
