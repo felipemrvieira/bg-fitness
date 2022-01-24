@@ -5,7 +5,7 @@ import plans from "./plans.module.scss";
 
 interface Props {
   title: string;
-  planList: Plan[];
+  planList?: Plan[];
 }
 
 interface Plan {
