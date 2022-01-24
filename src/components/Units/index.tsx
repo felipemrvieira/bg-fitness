@@ -5,7 +5,7 @@ import units from "./units.module.scss";
 import Farol from "./img/farol.jpeg";
 import Biu from "./img/biu.webp";
 import Jatiuca from "./img/praia.jpg";
-import PontaVerde from "./img/pontaverde.JPG";
+import PontaVerde from "./img/pontaverde.jpg";
 import Image from "next/image";
 import Button from "../Button";
 
