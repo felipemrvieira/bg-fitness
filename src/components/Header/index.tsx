@@ -8,8 +8,6 @@ import MenuItem from "@mui/material/MenuItem";
 
 import header from "./header.module.scss";
 
-const options = ["Unidades", "Conheça", "Matricule-se", "Atendimento"];
-
 const ITEM_HEIGHT = 48;
 
 const Header: React.FC = () => {
@@ -40,13 +38,18 @@ const Header: React.FC = () => {
           </div>
         </Link>{" "}
         <nav>
-          <Link href="/unidades">
-            <a>Unidades</a>
+          <Link href="/">
+            <a>Início</a>
           </Link>
-
-          <a>Conheça</a>
-          <a>Matricule-se</a>
-          <a>Atendimento</a>
+          <Link href="/">
+            <a>Conheça</a>
+          </Link>
+          <Link
+            href="http://www.bgfitness.com.br/BG_MATRICULA/"
+            passHref={true}
+          >
+            <a>Matricule-se</a>
+          </Link>
         </nav>
         <IconButton
           className={header.iconButton}
@@ -74,15 +77,24 @@ const Header: React.FC = () => {
             },
           }}
         >
-          {options.map((option) => (
-            <MenuItem
-              key={option}
-              selected={option === "Pyxis"}
-              onClick={handleClose}
-            >
-              {option}
+          <Link href="/" passHref={true}>
+            <MenuItem selected onClick={handleClose}>
+              Início
             </MenuItem>
-          ))}
+          </Link>
+          <Link href="/" passHref={true}>
+            <MenuItem selected onClick={handleClose}>
+              Conheça
+            </MenuItem>
+          </Link>
+          <Link
+            href="http://www.bgfitness.com.br/BG_MATRICULA/"
+            passHref={true}
+          >
+            <MenuItem selected onClick={handleClose}>
+              Matricule-se
+            </MenuItem>
+          </Link>
         </Menu>
       </div>
     </header>
