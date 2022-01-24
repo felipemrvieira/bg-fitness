@@ -11,18 +11,23 @@ import Jatiuca from "./img/praia.jpg";
 
 interface Props {
   title?: string;
+  cover?: string;
 }
 
-const UnitHeader: React.FC<Props> = ({ title }) => {
+const UnitHeader: React.FC<Props> = ({ title, cover }) => {
   return (
     <section className={unitHeader.sectionContainer}>
       <div className={unitHeader.sectionContent}>
-        <Image
-          className={unitHeader.unitPic}
-          src={Farol}
-          alt="Unidade BG Biu"
-          layout="fill"
-        />
+        <div className={unitHeader.imageWrapper}>
+          <Image
+            className={unitHeader.unitPic}
+            src={cover}
+            alt="Unidade BG Biu"
+            // width={260}
+            // height={56}
+            layout="fill"
+          />
+        </div>
 
         <h2 className={unitHeader.sectionTitle}>{title}</h2>
       </div>

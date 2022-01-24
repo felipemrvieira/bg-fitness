@@ -5,6 +5,7 @@ import units from "./units.module.scss";
 import Farol from "./img/farol.jpeg";
 import Biu from "./img/biu.webp";
 import Jatiuca from "./img/praia.jpg";
+import PontaVerde from "./img/pontaverde.JPG";
 import Image from "next/image";
 import Button from "../Button";
 
@@ -82,7 +83,11 @@ const Units: React.FC<Props> = ({ title }) => {
           </div>
           <div className={units.unit}>
             <div className={units.unitHeader}>
-              <Image className={units.unitPic} src={Biu} alt="Unidade BG Biu" />
+              <Image
+                className={units.unitPic}
+                src={PontaVerde}
+                alt="Unidade BG Biu"
+              />
             </div>
             <div className={units.unitBody}>
               <span>Unidade</span>

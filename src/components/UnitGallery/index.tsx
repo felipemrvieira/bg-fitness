@@ -28,7 +28,7 @@ const UnitGallery: React.FC<Props> = ({ photos }) => {
     <section className={unitGallery.sectionContainer}>
       <div className={unitGallery.sectionContent}>
         <h2 className={unitGallery.sectionTitle}>Galeria de fotos</h2>
-        <div>
+        <div className={unitGallery.gallery}>
           {photos.map((src, index) => (
             <Image
               className={unitGallery.unitPic}

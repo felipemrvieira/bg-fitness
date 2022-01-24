@@ -6,9 +6,10 @@ import classesTable from "./classesTable.module.scss";
 
 interface Props {
   title: string;
+  classes: any;
 }
 
-const ClassesTable: React.FC<Props> = ({ title }) => {
+const ClassesTable: React.FC<Props> = ({ title, classes }) => {
   return (
     <section className={classesTable.sectionContainer}>
       <div className={classesTable.sectionContent}>
@@ -26,62 +27,14 @@ const ClassesTable: React.FC<Props> = ({ title }) => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <td>8:00</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
+              {classes.map((item) => (
+                <tr key={item.hour}>
+                  <td>{item.hour}</td>
+                  {item.classes.map((aula) => (
+                    <td key={aula.id}>{aula.name}</td>
+                  ))}
+                </tr>
+              ))}
             </tbody>
           </Table>
         </div>

@@ -68,5 +68,5 @@ h6 {
 .leaflet-left,
 .leaflet-bottom,
 .leaflet-right {
-  z-index: 1;
+  z-index: 998 !important;
 }
