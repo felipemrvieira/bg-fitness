@@ -167,7 +167,6 @@ export default function Unidades() {
     "/images/biu/20.jpg",
     "/images/biu/21.jpg",
   ];
-  const cover = Biu.src;
 
   const lat = -9.5576419;
   const lng = -35.7438497;
