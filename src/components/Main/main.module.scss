@@ -33,6 +33,9 @@
       color: var(--blue-main);
       font-size: 54px;
       font-weight: bold;
+      @media only screen and (min-width: 1px) and (max-width: 500px) {
+        font-size: 42px;
+      }
     }
     p {
       color: var(--blue-main);
