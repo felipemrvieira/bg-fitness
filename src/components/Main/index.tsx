@@ -1,5 +1,4 @@
 import React from "react";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Link from "next/link";
 
 import main from "./main.module.scss";
@@ -19,7 +18,9 @@ const Main: React.FC = () => {
             <Link href="http://www.bgfitness.com.br/BG_MATRICULA/">
               <a target="_blank">
                 <div className={main.button}>
-                  <ArrowForwardIosIcon className={main.buttonIcon} />
+                  <span className={"material-icons " + main.buttonIcon}>
+                    &#xe315;
+                  </span>
                 </div>
                 <span>Quero me matricular!</span>
               </a>

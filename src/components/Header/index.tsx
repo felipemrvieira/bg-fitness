@@ -60,7 +60,9 @@ const Header: React.FC = () => {
           aria-haspopup="true"
           onClick={handleClick}
         >
-          <MoreVertIcon />
+          <span className={"material-icons " + header.buttonIcon}>
+            &#xe5d4;
+          </span>
         </IconButton>
         <Menu
           id="long-menu"
