@@ -14,7 +14,23 @@ export default function Home() {
       </Head>
       <Main />
       <Differentials />
-      <Plans planList={[]} title="Nossos Planos" />
+      <Plans
+        planList={[
+          {
+            title: "Gold",
+            price: "99,90",
+            enrolmentFee: "129,90",
+            annualFee: "149,90",
+          },
+          {
+            title: "Platinum",
+            price: "129,90",
+            enrolmentFee: "129,90",
+            annualFee: "149,90",
+          },
+        ]}
+        title="Nossos Planos"
+      />
       <Units title="Nossas unidades" />
       <Testimonials />
     </>
