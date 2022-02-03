@@ -15,7 +15,10 @@ const UnitMap: React.FC<Props> = ({ lat, lng }) => {
 
   return (
     <section className={unitMap.sectionContainer}>
-      {ACCESS_TOKEN_MAP_BOX}
+      <div>
+        token:
+        {ACCESS_TOKEN_MAP_BOX}
+      </div>
       <div className={unitMap.sectionContent}>
         <MapContainer
           center={[lat, lng]}
